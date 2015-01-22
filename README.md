@@ -1,6 +1,6 @@
 goworker
 ====
-GoWorker is still very experimental. APIs are subject to change.
+GoWorker is still under heavy development. APIs are subject to change.
 
 ## Installation
 To install GoWorker, simply run 
