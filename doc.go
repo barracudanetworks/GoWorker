@@ -55,15 +55,12 @@ Pipeline
 There are three main stages in the worker pipeline.
 
 1
-
 The manager requests a job from the provider.
 
 2
-
 The Manager hands the job of to a worker that can handle the job.
 
 3
-
 Once the job is complete, the worker returns the job back to the manager, along with information about the result of the job. If the job was unsuccessful, and the job is configured to retry, step two and three will repeat until the job succeeds or the retries have been exhuasted. Once the retries have been exhausted, the manager hands the job off to the manager's failure handlers, if they have been configured.
 
 So graphically...
