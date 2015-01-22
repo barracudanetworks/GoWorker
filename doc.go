@@ -36,7 +36,7 @@ or
 
 Composition
 
-The work manager is compried of three main componants.
+The work manager is comprised of three main componants.
 Provider
 Provides jobs to the manager from an external source.
 Worker
