@@ -37,12 +37,12 @@ or
 Composition
 
 The work manager is compried of three main componants.
-* Provider
-	* Provides jobs to the manager from an external source.
-* Worker
-	* Takes a job, exicutes it, and returns its status and statistics about the job back to the manager.
-* Manager
-	* Manages the work pipline. Requests jobs from the providers and sends them to the workers.
+Provider
+	Provides jobs to the manager from an external source.
+Worker
+	Takes a job, exicutes it, and returns its status and statistics about the job back to the manager.
+Manager
+	Manages the work pipline. Requests jobs from the providers and sends them to the workers.
 
 Pipeline
 
