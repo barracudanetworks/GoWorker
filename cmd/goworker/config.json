@@ -1,0 +1,60 @@
+{
+    "man_to_man": "hostname",
+    "providers": [
+        {
+            "redis": {
+                "name": "redis",
+                "host": "localhost",
+                "target": 100000,
+                "port": "6379",
+                "job_list": "job_list",
+                "dump_on_limit": true,
+                "memory_limit": "2G"
+            }
+        },
+        {
+            "http": {
+                "name": "http",
+                "listen_on": "0.0.0.0:8081",
+                "endpoint": "/job/add"
+            }
+        },
+        {
+            "file": {
+                "root_folder": "jobs",
+                "check_interval": "1h",
+                "format": "json",
+                "target": 200
+            }
+        }
+    ],
+    "workers": [
+        {
+            "cli": {
+                "name": "cli",
+                "workers": 1
+            }
+        },
+        {
+            "http": {
+                "name": "http"
+            }
+        },
+        {
+            "file": {
+                "name": "file",
+                "root_folder": "jobs",
+                "format": "tar"
+            }
+        }
+    ],
+    "failure_handler": [
+        {
+            "file": {
+                "name": "failure",
+                "root_folder": "failures",
+                "raw": true
+            }
+        }
+    ]
+}

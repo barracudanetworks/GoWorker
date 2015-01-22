@@ -1,0 +1,2238 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"db_copy_Link",
+				"db_copy_link_update"
+			],
+			[
+				"DB",
+				"DB_TYPE_NULL"
+			],
+			[
+				"getObjec",
+				"get_object_meta_owner  (function)"
+			],
+			[
+				"server",
+				"server_list"
+			],
+			[
+				"regi",
+				"registerShutdownHook"
+			],
+			[
+				"addComa",
+				"addCompany  (function)"
+			],
+			[
+				"addComapny",
+				"addCompanyUser  (function)"
+			],
+			[
+				"Copy_Test_Database",
+				"Copy_Test_DatabaseTestCase  (class)"
+			],
+			[
+				"authdb",
+				"authdb_id"
+			],
+			[
+				"add",
+				"AddService  (function)"
+			],
+			[
+				"meta",
+				"meta_user"
+			],
+			[
+				"compan",
+				"companies"
+			],
+			[
+				"Copy_Meta_Link",
+				"Copy_Meta_LinkRecipient"
+			],
+			[
+				"Copy",
+				"Copy_Meta_Object"
+			],
+			[
+				"ac",
+				"actual_result"
+			],
+			[
+				"addComapn",
+				"addCompanyUser  (function)"
+			],
+			[
+				"user",
+				"user2"
+			],
+			[
+				"confir",
+				"API_AUTHENTICATION_NOTCONFIRMED  (constant)"
+			],
+			[
+				"assertApi",
+				"assertApiError"
+			],
+			[
+				"Copy_Ex",
+				"Copy_Exception_API  (class)"
+			],
+			[
+				"Copy_Meta_Co",
+				"Copy_Meta_CompanyUser addCompanyUser(Copy_Meta_Company $company, Copy_Meta_User $user, int $role = Copy_Meta_CompanyUser::USER_ROLE_MEMBER)"
+			],
+			[
+				"Copy_",
+				"Copy_API_Request  (class)"
+			],
+			[
+				"Copy_meta",
+				"Copy_Meta_User"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"email",
+				"emails  (variable)"
+			],
+			[
+				"emai",
+				"emails  (variable)"
+			],
+			[
+				"ema",
+				"emails  (variable)"
+			],
+			[
+				"Copy_API",
+				"Copy_API_Method  (class)"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"str_re",
+				"str_replace  (function)"
+			],
+			[
+				"GOOGLE",
+				"GOOGLE_API_KEYS"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"GOOGL",
+				"GOOGLE_GEOCODE_URL"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"GOO",
+				"GOOGLE_GEOCODE_URL"
+			],
+			[
+				"distance",
+				"distance"
+			],
+			[
+				"getVox",
+				"getVoxelList"
+			],
+			[
+				"getVl",
+				"getVoxel"
+			],
+			[
+				"size",
+				"sizePerVoxel"
+			],
+			[
+				"Vox",
+				"VOXEL_DECIMAL"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"event",
+				"events  (variable)"
+			],
+			[
+				"curre",
+				"currency"
+			],
+			[
+				"are",
+				"arena"
+			],
+			[
+				"price",
+				"price_match"
+			],
+			[
+				"gol",
+				"goalie_max  (variable)"
+			],
+			[
+				"max",
+				"skater_max  (variable)"
+			],
+			[
+				"find",
+				"findByAttributes  (function)"
+			],
+			[
+				"findALL",
+				"findAllByAttributes"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"join",
+				"join()	standard Function"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"explo",
+				"explode()	standard Function"
+			],
+			[
+				"micro",
+				"microtime()	standard Function"
+			],
+			[
+				"getPlayer",
+				"getPlayerVars  (function)"
+			],
+			[
+				"Exception",
+				"CException  (class)"
+			],
+			[
+				"MYSQL_DATE",
+				"MYSQLI_TYPE_DATETIME	mysqli Constant"
+			],
+			[
+				"Be",
+				"BELONGS_TO  (constant)"
+			],
+			[
+				"preg",
+				"preg_match  (function)"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"isset",
+				"isset()	Language Construct"
+			],
+			[
+				"err",
+				"displayError  (function)"
+			],
+			[
+				"map",
+				"MapTo	inject.TypeMapper ƒ"
+			],
+			[
+				"Class",
+				"ClassicMartini	struct ʈ"
+			],
+			[
+				"func",
+				"func main	func main {...} ʂ"
+			],
+			[
+				"L",
+				"Llongfile	 Ɩ"
+			],
+			[
+				"read",
+				"ReadFull	n int, err error ƒ"
+			],
+			[
+				"print",
+				"Println	 ƒ"
+			],
+			[
+				"re",
+				"Response	struct ʈ"
+			],
+			[
+				"fun",
+				"func (*Game)	func (...) {...} ʂ"
+			],
+			[
+				"bu",
+				"writeBuf	[]byte ν"
+			],
+			[
+				"wrte",
+				"WriteString	n int, err error ƒ"
+			],
+			[
+				"de",
+				"decisionChan	chan []byte ν"
+			],
+			[
+				"prin",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"tcp",
+				"DialTCP	*net.TCPConn, error ƒ"
+			],
+			[
+				"d",
+				"decisionChan	chan []byte ν"
+			],
+			[
+				"Game",
+				"GameResult	struct ʈ"
+			],
+			[
+				"dec",
+				"Decide	 ƒ"
+			],
+			[
+				"ex",
+				"ExecuteTemplate	error ƒ"
+			],
+			[
+				"Data",
+				"DataPoint	struct ʈ"
+			],
+			[
+				"Da",
+				"DataPoint	struct ʈ"
+			],
+			[
+				"data",
+				"DataSet	struct ʈ"
+			],
+			[
+				"loa",
+				"LoadFile	[]byte, error ƒ"
+			],
+			[
+				"unlimited",
+				"unlimited_storage_domains"
+			],
+			[
+				"Copy_API_Me",
+				"Copy_API_Method_User"
+			],
+			[
+				"res",
+				"ResetTimer	 ƒ"
+			],
+			[
+				"dia",
+				"DialTimeout	redis.Conn, error ƒ"
+			],
+			[
+				"test",
+				"testRequest	struct ʈ"
+			],
+			[
+				"se",
+				"SetManager	 ƒ"
+			],
+			[
+				"s",
+				"SetJobChan	 ƒ"
+			],
+			[
+				"w",
+				"LOG_WARN	 Ɩ"
+			],
+			[
+				"ma",
+				"Manager	*Manager ν"
+			],
+			[
+				"job",
+				"job	Request ν"
+			],
+			[
+				"Re",
+				"Request	interface ¡"
+			],
+			[
+				"typ",
+				"TYPE_TO_DEFAULT	map[string]interface{} ν"
+			],
+			[
+				"Json",
+				"JSON_Schema	struct ʈ"
+			],
+			[
+				"sch",
+				"schemas	[]*JSON_Schema ν"
+			],
+			[
+				"sche",
+				"JSON_Schema	struct ʈ"
+			],
+			[
+				"en",
+				"entry	int ν"
+			],
+			[
+				"Read",
+				"ReadFile	[]byte, error ƒ"
+			],
+			[
+				"StatusBad",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"status",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"e",
+				"ErrBodyNotAllowed	error ν"
+			],
+			[
+				"I",
+				"I_Request	struct ʈ"
+			],
+			[
+				"hand",
+				"HandleFunc	 ƒ"
+			],
+			[
+				"i",
+				"Id	uint64 ν"
+			],
+			[
+				"handler",
+				"HandlerFunc	func(http.ResponseWriter, *http.Request) ʈ"
+			],
+			[
+				"imp",
+				"import	import (...) ʂ"
+			],
+			[
+				"im",
+				"import	import (...) ʂ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/cmd/mgmt/mgmt.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "manager.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/mgmt.sublime-project",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "signalPack.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/provider/mock_provider.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/provider/provider.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker/cli.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker/worker.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 349.0,
+		"selected_items":
+		[
+			[
+				"test",
+				"Remote PHPUnit: Run tests in current file"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"phpu",
+				"Remote PHPUnit: Run all"
+			],
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"php",
+				"Remote PHPUnit: Run all"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"stop",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"xdebug",
+				"Preferences: Xdebug Settings – User"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"x",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"xdeb",
+				"Xdebug: Stop Debugging"
+			],
+			[
+				"PHPU",
+				"Remote PHPUnit: Run tests in current file"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"current",
+				"Git: Add Current File"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
+			[
+				"play",
+				"GoSublime: Share (on play.golang.org)"
+			],
+			[
+				"playgr",
+				"GoSublime: Share (on play.golang.org)"
+			],
+			[
+				"vintigu",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Toggle Annotations"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"curr",
+				"Git: Add Current File"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":q",
+				"Git: Quick Commit"
+			],
+			[
+				"branch",
+				"Git: Change Branch"
+			],
+			[
+				"QUI",
+				"Git: Quick Commit"
+			],
+			[
+				"aDD",
+				"Git: Add..."
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"runall",
+				"Remote PHPUnit: Run all"
+			],
+			[
+				"merge",
+				"Git: Merge Branch"
+			],
+			[
+				"run all",
+				"Remote PHPUnit: Run all"
+			],
+			[
+				"stash",
+				"Git: Stash Apply"
+			],
+			[
+				"phu",
+				"Remote PHPUnit: Run unit tests"
+			],
+			[
+				"todo",
+				"SimpleTODO: Add TODO"
+			],
+			[
+				"restart",
+				"Xdebug: Restart Session"
+			],
+			[
+				"watch",
+				"Xdebug: Set Watch Expression"
+			],
+			[
+				"diable",
+				"Package Control: Disable Package"
+			],
+			[
+				"clear",
+				"Xdebug: Clear All Breakpoints"
+			],
+			[
+				"restar",
+				"Xdebug: Restart Session"
+			],
+			[
+				"clear Break",
+				"Xdebug: Clear All Breakpoints"
+			],
+			[
+				"break",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"xde",
+				"Xdebug: Clear All Breakpoints"
+			],
+			[
+				"xdebug settings",
+				"Preferences: Xdebug Settings – Default"
+			],
+			[
+				"phpuu",
+				"Remote PHPUnit: Run all"
+			],
+			[
+				"add/re",
+				"Xdebug: Add/Remove Breakpoint"
+			],
+			[
+				"phpun",
+				"Remote PHPUnit: Run tests in current file"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"unstage",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"errors",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"lint",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"todore",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
+				"pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"prolog",
+				"Set Syntax: SWI-Prolog"
+			],
+			[
+				"set syntax: pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"checkout",
+				"Git: Checkout Tag"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"set syntax markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"dock",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"goim",
+				"GoImports"
+			],
+			[
+				"impor",
+				"GoImports"
+			],
+			[
+				"impo",
+				"GoImports"
+			],
+			[
+				"goimpo",
+				"GoImports"
+			],
+			[
+				"Push",
+				"Git: Push Current Branch"
+			],
+			[
+				"add/",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"gosublime",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"import",
+				"GoImports"
+			],
+			[
+				"psuh",
+				"Git: Push"
+			],
+			[
+				"go fmt",
+				"GoSublime: Fmt and save"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 384.0,
+		"history":
+		[
+			"ls",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/LdapTest.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/GetUserTest.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/AuthApiTest.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/jakub-onderka/php-parallel-lint/src/Manager.php",
+		"/Users/eliot/git/copy/cloud/tests/database/MetaUserAnonTest.php",
+		"/Users/eliot/git/copy/cloud/.idea/misc.xml",
+		"/Users/eliot/git/copy/cloud/lib/copy/test/DataHelper.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/test/ApiBinaryTestCase.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/test/TestCase.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/token.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/slate/LICENSE",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/Ldap.php",
+		"/Users/eliot/git/copy/cloud/tests/rest/GetUserTest.php",
+		"/Users/eliot/git/copy/cloud/tests/rest/GetFileActivity.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/test/RestTestCase.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/AuthCompanyTest.php",
+		"/Users/eliot/git/copy/cloud/tests/sys/AuthTest.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/AddUserEmailTest.php",
+		"/Users/eliot/git/copy/cloud/resource/apc.php",
+		"/Users/eliot/git/copy/cloud/cli/cleanup/active_user.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/Auth.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/auth_user.json",
+		"/Users/eliot/git/copy/cloud/cli/download_full_account.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/email_domain_blacklist.php",
+		"/Users/eliot/git/copy/cloud/cli/cleanup/meta_db_migrate.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/symfony/dependency-injection/Symfony/Component/DependencyInjection/Tests/Fixtures/yaml/bad_calls.yml",
+		"/Users/eliot/git/copy/cloud/copy/vendor/predis/predis/examples/debuggable_connection.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/database/tables/server/region_copy.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/Link.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/LinkInterface.php",
+		"/Users/eliot/git/copy/cloud/generate_logs.xml.dist",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/get_canonical_email.json",
+		"/Users/eliot/git/copy/cloud/workerd/modules/generate_thumbnails.php",
+		"/Users/eliot/git/copy/cloud/copy/actions/update_link.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/User.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/SyncLinkTest.php",
+		"/Users/eliot/git/copy/cloud/client/stub.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/sync_link.json",
+		"/Users/eliot/git/copy/cloud/copy/actions/sync_pull.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/User.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/method_doc.php",
+		"/Users/eliot/git/copy/cloud/tests/database/MetaUserTest.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/predis/predis/src/Transaction/MultiExec.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/user_purge.php",
+		"/Users/eliot/git/copy/cloud/cli/usage_tool.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/update_developer_info.json",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/update_password.json",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/Object.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy_meta/meta_object.php",
+		"/Users/eliot/git/copy/cloud/cli/copy_company.php",
+		"/Users/eliot/git/copy/cloud/cli/workerd_migrate_daemon.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/database/mysql/query.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/Object.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/Dispatcher.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/Oauth.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/OAuth.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/database/mysql.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpmailer/phpmailer/docs/extending.html",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/database/mysql/transaction.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/modules/httpful/.travis.yml",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/math/convert.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/.git",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/database/sql.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/bos/API_BOS.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/math/ip.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/elasticsearch/elasticsearch/docs/php-version-requirement.asciidoc",
+		"/Users/eliot/git/copy/cloud/phpunit",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php",
+		"/Users/eliot/git/copy/cloud/modules/php-libs/modules/httpful/tests/bootstrap-server.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/Path.php",
+		"/Users/eliot/git/copy/cloud/cli/copy_companies_usage.php",
+		"/Users/eliot/git/copy/cloud/cli/copy_stats_api_query.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/CompanyUser.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/Cache.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy_meta/create_tables.sql",
+		"/Users/eliot/git/copy/cloud/build/schema/copy_meta/01.sql",
+		"/Users/eliot/git/copy/cloud/copy/actions/reset_password.php",
+		"/Users/eliot/git/copy/cloud/build/copy_api.ebuild",
+		"/Users/eliot/git/copy/cloud/tests/database/fixtures/company_pointer.json",
+		"/Users/eliot/git/copy/cloud/cli/cleanup/clean_orphan_data.php",
+		"/Users/eliot/git/copy/cloud/copy/actions/download_object.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/LinkRecipient.php",
+		"/Users/eliot/git/copy/cloud/tests/user/BonusTest.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/Link.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/api/method/Billing.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/redis_hosts.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/oauth/redis/Nonce.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/data/Redis.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-regexp.phpt",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpunit/phpunit/tests/TextUI/filter-dataprovider-by-range.phpt",
+		"/Users/eliot/Library/Application Support/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/referral.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/billing_activate.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/promotion.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/oauth_consumer.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/sync_filter.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/elasticsearch_hosts.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/link.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy_meta/bandwidth.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/list_user_bonuses.json",
+		"/Users/eliot/git/copy/cloud/lib/copy/data/redis/lua/SetIfNotExist.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/util.php",
+		"/Users/eliot/git/copy/cloud/tests/sys/PathTest.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/pending_application.json",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/RemoveShareTest.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/push_host.php",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/remove_company.json",
+		"/Users/eliot/git/copy/cloud/modules/rsd/server/module/repl_mgr.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/ListLinksTest.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/ListLinks2Test.php",
+		"/Users/eliot/git/copy/cloud/cli/cleanup/list.txt",
+		"/Users/eliot/git/copy/cloud/doc_generator/output/schemas/list_shares.json",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/LinkSync.php",
+		"/Users/eliot/git/copy/cloud/tests/database/MetaLinkSyncTest.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/Company.php",
+		"/Users/eliot/git/copy/cloud/copy/vendor/phpunit/phpunit/tests/Regression/GitHub/797.phpt",
+		"/Users/eliot/git/copy/cloud/build/schema/copy/70.sql",
+		"/Users/eliot/git/copy/cloud/lib/copy/Exception.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/meta/LinkObject.php",
+		"/Users/eliot/git/copy/cloud/tests/jsonrpc/CreateGroupTest.php",
+		"/Users/eliot/git/copy/cloud/lib/copy/acl/GroupEntity.php",
+		"/Users/eliot/git/copy/cloud/cli/link_tool.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy/link_recipient.php",
+		"/Users/eliot/git/copy/cloud/lib/tables/copy_meta/scan_result.php",
+		"/Users/eliot/git/copy/cloud/cli/add_share_member.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 396.0,
+		"where_history":
+		[
+			"/Users/eliot/git/copy/cloud",
+			"/Users/eliot/git/copy/cloud/lib/copy/oauth",
+			"/Users/eliot/git/copy/cloud",
+			"/Users/eliot/git/copy/cloud/lib/copy",
+			"/Users/eliot/git/craftycode/portal-sports/protected",
+			"/Users/eliot/git/docs/slate",
+			"/Users/eliot/git/docs/slateruby",
+			"/Users/eliot/git/docs/slate",
+			"",
+			"/Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/copy_cloud/lib"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tion db_copy_link_listCompanyByRecipient(",
+			"mysql_close",
+			"mysql_connect",
+			"mysqli_connect",
+			"defined",
+			"Copy_User_Bonus::create",
+			"refe",
+			"bonus",
+			"reactivateCompanyFolder",
+			"reactiveateCompanyFolder",
+			"sync",
+			"add_share",
+			"RemoveCopyService",
+			"AddCopyService",
+			"UserHasCopyService",
+			"RemoveCopyService",
+			"AddCopyService",
+			"MAINTENANCE",
+			"$",
+			"_problem",
+			"oauth_problem=",
+			"MAINTENANCE",
+			"MAINTENANCE_MODE_ON",
+			"has_user ",
+			"remove",
+			"get_user(",
+			"has_user",
+			"cache_dirty.*invite.*",
+			"cache_dirty(.*invite.*",
+			"pending",
+			"invites",
+			"remove(",
+			"cache_dirty(",
+			"remove(",
+			"}\n",
+			"list_users(",
+			"invite",
+			"jstream",
+			"*/\n",
+			"timestampNonceHandler",
+			"nonce",
+			"authdb_user",
+			"create(",
+			"user_info",
+			"create(",
+			"authdb_user_id",
+			"list_groups",
+			"fetch_by_",
+			"stopSharing",
+			"stop_sharing",
+			"invite",
+			"list",
+			"fetch_by_",
+			"fetch_by_reciptient_object_user",
+			"remove",
+			"fetch_by_recipient",
+			"->role",
+			"public $",
+			"get_role",
+			"link_id",
+			"invite",
+			"remove",
+			"% 100",
+			"domain",
+			"<?",
+			"gmp",
+			"gmp_init",
+			"gmp",
+			"/**\n",
+			"',\n",
+			";\n",
+			"size",
+			"update",
+			"send_files(",
+			"send_files()",
+			"));\n",
+			"cannot find latest revision with owner",
+			"Cannot find latest revision with owner",
+			"is_company_user_root",
+			"meta_owner",
+			"link_objects",
+			"hard_delete",
+			"size",
+			";\n",
+			"confirm_email",
+			"addUser(",
+			"addUser",
+			"();\n",
+			"confirm_user",
+			"confirm",
+			"<?",
+			"confirm_email",
+			"		'",
+			"zolt",
+			"rink_account_settings",
+			"rink_account_settings_post_url",
+			" ()",
+			"init",
+			"1",
+			"/demo-pages",
+			"__construct",
+			"/git",
+			"singup",
+			"signup",
+			"asset",
+			"require_once(dirname(__FILE__) . '/../../config.php');\nrequire_once(__FILE__) . '/../../templates/handlebars_setup.php');",
+			"require_once(dirname(__FILE__) . '/../../config.php');\nrequire_once(__FILE__)'/../../templates/handlebars_setup.php');",
+			"require_once('../../config.php');\nrequire_once('../../templates/handlebars_setup.php');",
+			"require_once('/../../config.php');\nrequire_once('/../../templates/handlebars_setup.php');",
+			"login",
+			"require_once('../on-demand-templates.php');",
+			"websocket",
+			"copy",
+			"tion update",
+			"tion_update",
+			",\n",
+			"string",
+			"eliot.d.hedeman@gmail.com",
+			"python",
+			"shell",
+			"python",
+			"TEMPLATE",
+			"patch",
+			"user_id",
+			" \n",
+			"uint64"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"removeCopyService\n",
+			"addCopyService\n",
+			"userHasCopyService",
+			"removeCopyService",
+			"addCopyService",
+			"",
+			"require_once(dirname(__FILE__) . '/../../config.php');\nrequire_once(dirname(__FILE__) . '/../../templates/handlebars_setup.php');",
+			"require_once(dirname(__FILE__) . '/../../config.php');\nrequire_once(__FILE__) . '/../../templates/handlebars_setup.php');",
+			"require_once(dirname(__FILE__) .'/../on-demand-templates.php');",
+			"portal",
+			"example@test.com",
+			"EOT",
+			"string"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/cmd/mgmt/mgmt.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"native",
+									[
+										"sequence",
+										{
+											"commands":
+											[
+												[
+													"_vi_o",
+													{
+														"count": 1,
+														"mode": "mode_internal_normal"
+													}
+												],
+												[
+													"insert",
+													{
+														"characters": "ma"
+													}
+												],
+												[
+													"insert",
+													{
+														"characters": "na"
+													}
+												],
+												[
+													"insert",
+													{
+														"characters": "ger."
+													}
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												],
+												[
+													"left_delete",
+													null
+												]
+											]
+										}
+									],
+									"mode_insert",
+									null
+								],
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "manager.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"highlight_line": false,
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"vi",
+									"rr",
+									"mode_normal",
+									null
+								],
+								"sequence": "",
+								"xpos": 42
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/mgmt.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "signalPack.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/provider/mock_provider.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"vi",
+									"d",
+									"mode_normal",
+									[
+										0,
+										51,
+										"mode_visual"
+									]
+								],
+								"sequence": "",
+								"xpos": 43
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/provider/provider.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"vi",
+									"d",
+									"mode_normal",
+									[
+										0,
+										51,
+										"mode_visual"
+									]
+								],
+								"sequence": "",
+								"xpos": 43
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker/cli.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"vi",
+									"d",
+									"mode_normal",
+									[
+										0,
+										45,
+										"mode_visual"
+									]
+								],
+								"sequence": "",
+								"xpos": 40
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker/worker.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"repeat_data":
+								[
+									"vi",
+									"d",
+									"mode_normal",
+									[
+										0,
+										51,
+										"mode_visual"
+									]
+								],
+								"sequence": "",
+								"xpos": 43
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/eliot/git/copy/cloud":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/eliot/git/copy/cloud/lib/copy/oauth/redis":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/benchmarker":
+	{
+		"height": 155.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/benchmarker/lib":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/copy_cloud/api/jsonrpc":
+	{
+		"height": 173.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/copy_cloud/lib/meta":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/gowins":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/gowins/lib":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/programming-contest/server/engine/src/engine":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/schema-to-markdown":
+	{
+		"height": 172.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/schema-to-markdown/lib":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/git.eliothedeman.com/eliothedeman/socketFlood":
+	{
+		"height": 257.0
+	},
+	"output.9o:///Users/eliot/git/go/src/github.com/eliothedeman/common-practice/api":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/eliot/git/go/src/github.com/eliothedeman/common-practice/api/searchAPI":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/github.com/eliothedeman/common-practice/storage":
+	{
+		"height": 254.0
+	},
+	"output.9o:///Users/eliot/git/go/src/github.com/eliothedeman/go-manage":
+	{
+		"height": 216.0
+	},
+	"output.9o:///Users/eliot/git/go/src/github.com/eliothedeman/php":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/manager":
+	{
+		"height": 313.0
+	},
+	"output.9o:///Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/mock":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/eliot/git/go/src/stash.cudaops.com/ehedeman/mgmt/worker/http":
+	{
+		"height": 196.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 100.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 100.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 112.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 234.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 112.0
+	},
+	"output.xdebug":
+	{
+		"height": 100.0
+	},
+	"project": "mgmt.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"test/ldap",
+				"tests/jsonrpc/LdapTest.php"
+			],
+			[
+				"test/getuser",
+				"tests/jsonrpc/GetUserTest.php"
+			],
+			[
+				"test/auth",
+				"tests/jsonrpc/AuthApiTest.php"
+			],
+			[
+				"linkrecip",
+				"lib/copy/meta/LinkRecipient.php"
+			],
+			[
+				"method/link",
+				"lib/copy/api/method/Link.php"
+			],
+			[
+				"/update_link",
+				"copy/actions/update_link.php"
+			],
+			[
+				"update",
+				"copy/actions/update_link.php"
+			],
+			[
+				"dispatcher",
+				"lib/copy/api/Dispatcher.php"
+			],
+			[
+				"method/object",
+				"lib/copy/api/method/Object.php"
+			],
+			[
+				"php-libs/mysql",
+				"modules/php-libs/database/mysql.php"
+			],
+			[
+				"copy_company",
+				"cli/copy_company.php"
+			],
+			[
+				"object",
+				"lib/copy/meta/Object.php"
+			],
+			[
+				"copy_meta_ob",
+				"lib/tables/copy_meta/meta_object.php"
+			],
+			[
+				"copy_compa",
+				"cli/copy_company.php"
+			],
+			[
+				"download",
+				"cli/download_full_account.php"
+			],
+			[
+				"meta/user",
+				"lib/copy/meta/User.php"
+			],
+			[
+				"method/user",
+				"lib/copy/api/method/User.php"
+			],
+			[
+				"dataredis",
+				"lib/copy/data/Redis.php"
+			],
+			[
+				"oauth",
+				"lib/copy/OAuth.php"
+			],
+			[
+				"lib/tables/copy/redis",
+				"lib/tables/copy/redis_hosts.php"
+			],
+			[
+				"nonce",
+				"lib/copy/oauth/redis/Nonce.php"
+			],
+			[
+				"path",
+				"lib/copy/Path.php"
+			],
+			[
+				"user",
+				"lib/copy/meta/User.php"
+			],
+			[
+				"meta/",
+				"lib/copy/meta/LinkRecipient.php"
+			],
+			[
+				"phpu",
+				"phpunit"
+			],
+			[
+				"removeshare",
+				"tests/jsonrpc/RemoveShareTest.php"
+			],
+			[
+				"listlinkstest",
+				"tests/jsonrpc/ListLinksTest.php"
+			],
+			[
+				"meta/company",
+				"lib/copy/meta/Company.php"
+			],
+			[
+				"redis",
+				"lib/copy/data/Redis.php"
+			],
+			[
+				"meta/linkre",
+				"lib/copy/meta/LinkRecipient.php"
+			],
+			[
+				"linksync",
+				"lib/copy/meta/LinkSync.php"
+			],
+			[
+				"companyuser",
+				"lib/copy/meta/CompanyUser.php"
+			],
+			[
+				"meta/link",
+				"lib/copy/meta/Link.php"
+			],
+			[
+				"excep",
+				"lib/copy/Exception.php"
+			],
+			[
+				"link",
+				"lib/copy/meta/Link.php"
+			],
+			[
+				"datahelp",
+				"lib/copy/test/DataHelper.php"
+			],
+			[
+				"meta/obje",
+				"lib/copy/meta/Object.php"
+			],
+			[
+				"share",
+				"lib/copy/api/method/Share.php"
+			],
+			[
+				"link/u",
+				"lib/copy/link/Util.php"
+			],
+			[
+				"datahel",
+				"lib/copy/test/DataHelper.php"
+			],
+			[
+				"exce",
+				"lib/copy/Exception.php"
+			],
+			[
+				"synclink",
+				"tests/jsonrpc/SyncLinkTest.php"
+			],
+			[
+				"setifnot",
+				"lib/copy/data/redis/lua/SetIfNotExist.php"
+			],
+			[
+				"base.",
+				"lib/copy/config/copy/base.ini"
+			],
+			[
+				".gitsu",
+				".gitmodules"
+			],
+			[
+				"exception",
+				"lib/copy/Exception.php"
+			],
+			[
+				"base.ini",
+				"lib/copy/config/copy/base.ini"
+			],
+			[
+				"cli/usr",
+				"cli/user_tool.php"
+			],
+			[
+				"shutdo",
+				"tests/jsonrpc/ShutdownHooksTest.php"
+			],
+			[
+				"test.php",
+				"lib/copy/oauth/redis/test.php"
+			],
+			[
+				"meta/ob",
+				"lib/copy/meta/Object.php"
+			],
+			[
+				"cache",
+				"lib/copy/Cache.php"
+			],
+			[
+				"helper",
+				"lib/copy/test/DataHelper.php"
+			],
+			[
+				"datah",
+				"lib/copy/test/DataHelper.php"
+			],
+			[
+				"meta/companyu",
+				"lib/copy/meta/CompanyUser.php"
+			],
+			[
+				"testcase",
+				"lib/copy/test/TestCase.php"
+			],
+			[
+				"method/appli",
+				"lib/copy/api/method/Applications.php"
+			],
+			[
+				"method/oauth",
+				"lib/copy/api/method/Oauth.php"
+			],
+			[
+				"except",
+				"lib/copy/Exception.php"
+			],
+			[
+				"method/auth",
+				"lib/copy/api/method/Auth.php"
+			],
+			[
+				"authdbuser",
+				"copy/vendor/barracuda/php-libs/authdb/user.php"
+			],
+			[
+				"meta/us",
+				"lib/copy/meta/User.php"
+			],
+			[
+				"phplibs/user",
+				"copy/vendor/barracuda/php-libs/authdb/user.php"
+			],
+			[
+				"linkrec",
+				"lib/copy/meta/LinkRecipient.php"
+			],
+			[
+				"443",
+				"copy/vendor/phpunit/phpunit/tests/Regression/GitHub/433/Issue433Test.php"
+			],
+			[
+				"metauser",
+				"tests/database/MetaUserTest.php"
+			],
+			[
+				"meta/usertest",
+				"modules/zendesk/tests/Zendesk/API/Tests/UsersTest.php"
+			],
+			[
+				"copycach",
+				"lib/copy/Cache.php"
+			],
+			[
+				"authdb",
+				"modules/php-libs/authdb/user.php"
+			],
+			[
+				"meta/companyuser",
+				"lib/copy/meta/CompanyUser.php"
+			],
+			[
+				"ex",
+				"lib/copy/Exception.php"
+			],
+			[
+				"meta/post",
+				"lib/copy/api/rest/method/meta/Post.php"
+			],
+			[
+				"synclinkte",
+				"tests/jsonrpc/SyncLinkTest.php"
+			],
+			[
+				"ldap",
+				"lib/copy/api/method/Ldap.php"
+			],
+			[
+				"device/csd",
+				"lib/copy/meta/object/device/CSD.php"
+			],
+			[
+				"csd",
+				"lib/copy/object/CSD.php"
+			],
+			[
+				"synlinktest",
+				"tests/jsonrpc/SyncLinkTest.php"
+			],
+			[
+				"benchmark",
+				"benchmark.php"
+			],
+			[
+				"lib/copy/meta/object/devie",
+				"lib/copy/meta/object/device/CSD.php"
+			],
+			[
+				"linkrecp",
+				"lib/copy/meta/LinkRecipient.php"
+			],
+			[
+				"token",
+				"lib/copy/token.php"
+			],
+			[
+				"jsonrpc/synclink",
+				"tests/jsonrpc/SyncLinkTest.php"
+			],
+			[
+				"data",
+				"lib/copy/test/DataHelper.php"
+			],
+			[
+				"jsonrpc/sync",
+				"tests/jsonrpc/SyncLinkTest.php"
+			],
+			[
+				"jsonrpc/company",
+				"tests/jsonrpc/ListCompanyUsersTest.php"
+			],
+			[
+				"method/share",
+				"lib/copy/api/method/Share.php"
+			],
+			[
+				"portals",
+				"portal-sports.do"
+			],
+			[
+				"gitignore",
+				"portal-sports/.gitignore"
+			],
+			[
+				"quickeventwidget",
+				"portal-sports/protected/quickjoin-hockey/templates/rinks/quickEventWidget.handlebars"
+			],
+			[
+				"quckjoinwidget",
+				"quickjoin-hockey/templates/rinks/quickEventWidget.handlebars"
+			],
+			[
+				"ush",
+				"portal-sports/lib/Handlebars.php/src/Handlebars/Helper/UnlessHelper.php"
+			],
+			[
+				"",
+				"go/src/git.eliothedeman.com/eliothedeman/copy_cloud/cloud.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/git/go/src/stash.cudaops.com/ehedeman/mgmt/manager/mgmt.sublime-workspace"
+			],
+			[
+				"mgm",
+				"~/git/go/src/stash.cudaops.com/ehedeman/mgmt/mgmt.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 931.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
