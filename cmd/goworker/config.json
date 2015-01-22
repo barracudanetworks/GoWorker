@@ -1,5 +1,4 @@
 {
-    "man_to_man": "hostname",
     "providers": [
         {
             "redis": {
