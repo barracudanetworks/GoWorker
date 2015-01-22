@@ -1,12 +1,14 @@
-goworker
+GoWorker
 ====
-GoWorker is still under heavy development. APIs are subject to change.
+A plugin based work management system implimented in pure go.
+
+This project is still under heavy development. APIs are subject to change.
 
 ## Installation
 To install GoWorker, simply run 
 `go get github.com/barracudanetworks/GoWorker/...`
 
-#### Hint
+##### Hint
 In order for this to work, you must have a valid GOPATH set
 (read more about GOPATH [here](https://code.google.com/p/go-wiki/wiki/GOPATH))
 
@@ -49,3 +51,8 @@ There are three main stages in the worker pipeline.
 So graphically...
 __Provider->Manager->Worker->Manager__ 
 where each arrow represents a transition of ownership of the job.
+
+## Plugins
+Workers and providers are implemented as plugins. Because go compiles down to a static binary, you must recompile when you add new plugins.
+To load your plugin into the binary, add a blank import to your package in the main go program inside of the cmd directory. Your package must have an init function that calls either `provider.LoadProvider(YourProviderFactory)` or `worker.LoadWorker(YourWorkerFactory)`. Once your worker or provider has been loaded, it will be accessable in the config file by its name, in all lowercase.
+
