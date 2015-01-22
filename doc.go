@@ -59,7 +59,7 @@ There are three main stages in the worker pipeline.
 3 Once the job is complete, the worker returns the job back to the manager, along with information about the result of the job. If the job was unsuccessful, and the job is configured to retry, step two and three will repeat until the job succeeds or the retries have been exhuasted. Once the retries have been exhausted, the manager hands the job off to the manager's failure handlers, if they have been configured.
 
 So graphically...
-__Provider->Manager->Worker->Manager__
+Provider->Manager->Worker->Manager
 where each arrow represents a transition of ownership of the job.
 
 Plugins
