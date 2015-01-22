@@ -7,7 +7,7 @@ To install GoWorker, simply run
 `go get github.com/barracudanetworks/GoWorker/...`
 
 #### Hint
-in order for this to work, you must have a valid GOPATH set
+In order for this to work, you must have a valid GOPATH set
 (read more about GOPATH [here](https://code.google.com/p/go-wiki/wiki/GOPATH))
 
 ## Testing
@@ -29,3 +29,23 @@ The main program for this project can be built by navigating to cmd/goworker/ an
 or
 
 `go build` to compile the full binary for repeated use. 
+
+## Composition
+The work manager is compried of three main componants.
+* Provider
+	* Provides jobs to the manager from an external source.
+* Worker
+	* Takes a job, exicutes it, and returns its status and statistics about the job back to the manager.
+* Manager 
+	* Manages the work pipline. Requests jobs from the providers and sends them to the workers.
+
+### Pipeline
+There are three main stages in the worker pipeline.
+
+1. The manager requests a job from the provider.
+2. The Manager hands the job of to a worker that can handle the job.
+3. Once the job is complete, the worker returns the job back to the manager, along with information about the result of the job. If the job was unsuccessful, and the job is configured to retry, step two and three will repeat until the job succeeds or the retries have been exhuasted. Once the retries have been exhausted, the manager hands the job off to the manager's failure handlers, if they have been configured.
+
+So graphically...
+__Provider->Manager->Worker->Manager__ 
+where each arrow represents a transition of ownership of the job.
