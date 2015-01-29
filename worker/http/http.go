@@ -9,8 +9,8 @@ import (
 	std_http "net/http"
 	"net/url"
 
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/worker"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/worker"
 )
 
 var (

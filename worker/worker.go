@@ -7,8 +7,8 @@ import (
 
 	"strings"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/gowork/job"
 )
 
 // Factories holds all of the WorkerFacories that will be loaded for the manager to use

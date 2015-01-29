@@ -3,7 +3,7 @@ package manager
 import (
 	"testing"
 
-	"github.com/barracudanetworks/GoWorker/config"
+	"github.com/eliothedeman/gowork/config"
 )
 
 var (

@@ -6,7 +6,7 @@ This project is still under heavy development. APIs are subject to change.
 
 ## Installation
 To install GoWorker, simply run 
-`go get github.com/barracudanetworks/GoWorker/...`
+`go get github.com/eliothedeman/gowork/...`
 
 ##### Hint
 In order for this to work, you must have a valid GOPATH set
@@ -56,4 +56,4 @@ where each arrow represents a transition of ownership of the job.
 Workers and providers are implemented as plugins. Because go compiles down to a static binary, you must recompile when you add new plugins.
 To load your plugin into the binary, add a blank import to your package in the main go program inside of the cmd directory. Your package must have an init function that calls either `provider.LoadProvider(YourProviderFactory)` or `worker.LoadWorker(YourWorkerFactory)`. Once your worker or provider has been loaded, it will be accessable in the config file by its name, in all lowercase.
 
-More on writing plugins [worker](http://godoc.org/github.com/barracudanetworks/GoWorker/worker) [provider](http://godoc.org/github.com/barracudanetworks/GoWorker/provider)
+More on writing plugins [worker](http://godoc.org/github.com/eliothedeman/gowork/worker) [provider](http://godoc.org/github.com/eliothedeman/gowork/provider)

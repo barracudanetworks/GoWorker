@@ -3,9 +3,9 @@ package disk
 import (
 	"testing"
 
-	"github.com/barracudanetworks/GoWorker/database"
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/mock"
+	"github.com/eliothedeman/gowork/database"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/mock"
 )
 
 func TestDiskFactory(t *testing.T) {

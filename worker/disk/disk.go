@@ -8,12 +8,12 @@ import (
 	"log"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/database"
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/time_util"
-	"github.com/barracudanetworks/GoWorker/worker"
 	"github.com/boltdb/bolt"
+	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/gowork/database"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/time_util"
+	"github.com/eliothedeman/gowork/worker"
 )
 
 const (

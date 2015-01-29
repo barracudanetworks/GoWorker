@@ -13,7 +13,7 @@ const (
 )
 
 var (
-	DEFAULT_LUA_PATH  = os.Getenv("GOPATH") + "/src/github.com/barracudanetworks/GoWorker/lua"
+	DEFAULT_LUA_PATH  = os.Getenv("GOPATH") + "/src/github.com/eliothedeman/gowork/lua"
 	WRONG_CONFIG_TYPE = errors.New("config: wrong config type")
 	LUA_PATH          = DEFAULT_LUA_PATH
 )

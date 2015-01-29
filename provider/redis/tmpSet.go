@@ -10,8 +10,8 @@ import (
 
 	"sync"
 
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/lua"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/lua"
 	redigo "github.com/garyburd/redigo/redis"
 )
 

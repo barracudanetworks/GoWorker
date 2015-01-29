@@ -7,7 +7,7 @@ package config
 // 	"os"
 // 	"testing"
 
-// 	"github.com/barracudanetworks/GoWorker/job"
+// 	"github.com/eliothedeman/gowork/job"
 // )
 
 // var (

@@ -1,6 +1,6 @@
 package disk
 
-import "github.com/barracudanetworks/GoWorker/job"
+import "github.com/eliothedeman/gowork/job"
 
 // DiskJob a job that points back to a disk provider
 type DiskJob struct {

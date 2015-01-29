@@ -12,15 +12,15 @@ import (
 
 	"strings"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/manager"
-	"github.com/barracudanetworks/GoWorker/provider"
-	_ "github.com/barracudanetworks/GoWorker/provider/http"
-	_ "github.com/barracudanetworks/GoWorker/provider/redis"
-	"github.com/barracudanetworks/GoWorker/worker"
-	_ "github.com/barracudanetworks/GoWorker/worker/cli"
-	_ "github.com/barracudanetworks/GoWorker/worker/disk"
-	_ "github.com/barracudanetworks/GoWorker/worker/http"
+	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/gowork/manager"
+	"github.com/eliothedeman/gowork/provider"
+	_ "github.com/eliothedeman/gowork/provider/http"
+	_ "github.com/eliothedeman/gowork/provider/redis"
+	"github.com/eliothedeman/gowork/worker"
+	_ "github.com/eliothedeman/gowork/worker/cli"
+	_ "github.com/eliothedeman/gowork/worker/disk"
+	_ "github.com/eliothedeman/gowork/worker/http"
 )
 
 var (

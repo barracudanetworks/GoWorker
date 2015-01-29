@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/gowork/job"
 )
 
 var (

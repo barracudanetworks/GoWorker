@@ -3,8 +3,8 @@ package database
 import (
 	"sync"
 
-	"github.com/barracudanetworks/GoWorker/job"
 	"github.com/boltdb/bolt"
+	"github.com/eliothedeman/gowork/job"
 )
 
 var (

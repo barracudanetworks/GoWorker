@@ -3,7 +3,7 @@ package manager
 import (
 	"testing"
 
-	"github.com/barracudanetworks/GoWorker/mock"
+	"github.com/eliothedeman/gowork/mock"
 )
 
 func TestIncrementStats(t *testing.T) {

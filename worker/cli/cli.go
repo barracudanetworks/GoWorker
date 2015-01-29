@@ -6,8 +6,8 @@ import (
 	"log"
 	"os/exec"
 
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/worker"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/worker"
 )
 
 func init() {

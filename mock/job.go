@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/gowork/job"
 )
 
 // MockJob is a job which exicutes `echo hello` as a cli command

@@ -12,8 +12,8 @@ import (
 	std_http "net/http"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/provider"
+	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/gowork/provider"
 )
 
 const (
