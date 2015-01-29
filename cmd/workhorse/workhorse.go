@@ -15,7 +15,13 @@ import (
 	"github.com/eliothedeman/workhorse/config"
 	"github.com/eliothedeman/workhorse/manager"
 	"github.com/eliothedeman/workhorse/provider"
+	_ "github.com/eliothedeman/workhorse/provider/http"
+	_ "github.com/eliothedeman/workhorse/provider/redis"
+	_ "github.com/eliothedeman/workhorse/provider/sqs"
 	"github.com/eliothedeman/workhorse/worker"
+	_ "github.com/eliothedeman/workhorse/worker/cli"
+	_ "github.com/eliothedeman/workhorse/worker/disk"
+	_ "github.com/eliothedeman/workhorse/worker/http"
 )
 
 var (

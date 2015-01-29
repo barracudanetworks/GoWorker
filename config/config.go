@@ -40,7 +40,6 @@ type AppConfig struct {
 	ProviderConfigs        []ConfigPair
 	WorkerConfigs          []ConfigPair
 	FailureHanldlerConfigs []ConfigPair
-	ManagerToManager       string      `json:"manager_to_manager_port"`
 	StatsPort              string      `json:"stats_port"`
 	LuaPath                string      `json:"lua_path"`
 	RawProviders           ConfigBlock `json:"providers"`
