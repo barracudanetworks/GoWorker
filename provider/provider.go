@@ -23,7 +23,8 @@ func LoadProvider(p ProviderFactory) {
 	v := reflect.TypeOf(p())
 
 	// get the name of the provider
-	name := strings.TrimPrefix(strings.ToLower(v.String()), "*")
+	name := strings.TrimPrefix(strings.Split(strings.ToLower(v.String()), ".")[0], "*")
+	println(name)
 	Factories[name] = p
 }
 
@@ -52,7 +53,7 @@ type ProviderFactory func() Provider
 func Create(name string, c config.Config) (Provider, error) {
 	f, ok := Factories[name]
 	if !ok {
-		log.Println("could not find provider factory for %s", name)
+		log.Printf("could not find provider factory for %s\n", name)
 		return nil, PROVIDER_NOT_EXIST
 	}
 	p := f()

@@ -1,6 +1,7 @@
 package sqs
 
 import (
+	"encoding/base64"
 	"sync"
 	"time"
 
@@ -73,7 +74,7 @@ func (s *SQS) Init(i interface{}) error {
 
 	// set up the queue
 	var queue *amazon_sqs.Queue
-	queue, err = s.conn.CreateQueueWithTimeout(conf.Queue, conf.Timeout)
+	queue, err = s.conn.GetQueue(conf.Queue)
 	if err != nil {
 		return err
 	}
@@ -110,7 +111,9 @@ func (s *SQS) RequestWork(n int, c chan job.Job) error {
 
 	// for every message, parse out a job
 	for i := range messages.Messages {
-		body := []byte(messages.Messages[i].Body)
+
+		b, _ := base64.StdEncoding.DecodeString(messages.Messages[i].Body)
+		body := []byte(b)
 		conf, parseErr := job.ParseConfig(body)
 		if parseErr != nil {
 			return parseErr
@@ -150,5 +153,7 @@ func (s *SQS) Name() string {
 
 // SQSFactory factory for new SQS request
 func SQSFactory() provider.Provider {
-	return &SQS{}
+	return &SQS{
+		jobs: make(map[job.Job]*amazon_sqs.Message),
+	}
 }
