@@ -4,7 +4,6 @@ import (
 	"errors"
 	"log"
 	"reflect"
-
 	"strings"
 
 	"github.com/eliothedeman/workhorse/config"
