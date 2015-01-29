@@ -1,6 +1,6 @@
 package mock
 
-import "github.com/eliothedeman/gowork/job"
+import "github.com/eliothedeman/workhorse/job"
 
 // MockWorker mocks out the worker interface for testing
 type MockWorker struct {

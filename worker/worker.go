@@ -7,8 +7,8 @@ import (
 
 	"strings"
 
-	"github.com/eliothedeman/gowork/config"
-	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 // Factories holds all of the WorkerFacories that will be loaded for the manager to use

@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/eliothedeman/gowork/job"
-	"github.com/eliothedeman/gowork/provider"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
 )
 
 // Counter provides methods for atomically counting things

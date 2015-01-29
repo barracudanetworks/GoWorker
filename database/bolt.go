@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/boltdb/bolt"
-	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 var (

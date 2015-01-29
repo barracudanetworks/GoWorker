@@ -3,7 +3,7 @@ package mock
 import (
 	"time"
 
-	"github.com/eliothedeman/gowork/job"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 // MockProvider is a testing job provider

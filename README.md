@@ -6,7 +6,7 @@ This project is still under heavy development. APIs are subject to change.
 
 ## Installation
 To install workhorse, simply run 
-`go get github.com/eliothedeman/gowork/...`
+`go get github.com/eliothedeman/workhorse/...`
 
 ##### Hint
 In order for this to work, you must have a valid GOPATH set

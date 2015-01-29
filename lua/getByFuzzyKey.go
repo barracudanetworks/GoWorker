@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/workhorse/config"
 	redigo "github.com/garyburd/redigo/redis"
 )
 

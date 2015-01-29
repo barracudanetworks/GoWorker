@@ -12,15 +12,15 @@ import (
 
 	"strings"
 
-	"github.com/eliothedeman/gowork/config"
-	"github.com/eliothedeman/gowork/manager"
-	"github.com/eliothedeman/gowork/provider"
-	_ "github.com/eliothedeman/gowork/provider/http"
-	_ "github.com/eliothedeman/gowork/provider/redis"
-	"github.com/eliothedeman/gowork/worker"
-	_ "github.com/eliothedeman/gowork/worker/cli"
-	_ "github.com/eliothedeman/gowork/worker/disk"
-	_ "github.com/eliothedeman/gowork/worker/http"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/manager"
+	"github.com/eliothedeman/workhorse/provider"
+	_ "github.com/eliothedeman/workhorse/provider/http"
+	_ "github.com/eliothedeman/workhorse/provider/redis"
+	"github.com/eliothedeman/workhorse/worker"
+	_ "github.com/eliothedeman/workhorse/worker/cli"
+	_ "github.com/eliothedeman/workhorse/worker/disk"
+	_ "github.com/eliothedeman/workhorse/worker/http"
 )
 
 var (

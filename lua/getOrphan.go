@@ -6,7 +6,7 @@ import (
 
 	redigo "github.com/garyburd/redigo/redis"
 
-	"github.com/eliothedeman/gowork/config"
+	"github.com/eliothedeman/workhorse/config"
 )
 
 var (

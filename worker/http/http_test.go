@@ -3,8 +3,8 @@ package http
 import (
 	"testing"
 
-	"github.com/eliothedeman/gowork/job"
-	"github.com/eliothedeman/gowork/mock"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/mock"
 )
 
 var (

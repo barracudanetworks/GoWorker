@@ -5,9 +5,9 @@ import (
 	"time"
 
 	amazon_sqs "github.com/AdRoll/goamz/sqs"
-	"github.com/eliothedeman/gowork/config"
-	"github.com/eliothedeman/gowork/job"
-	"github.com/eliothedeman/gowork/provider"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
 )
 
 const (

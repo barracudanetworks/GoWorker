@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/eliothedeman/gowork/config"
-	"github.com/eliothedeman/gowork/database"
-	"github.com/eliothedeman/gowork/job"
-	"github.com/eliothedeman/gowork/provider"
-	"github.com/eliothedeman/gowork/time_util"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/database"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
+	"github.com/eliothedeman/workhorse/time_util"
 )
 
 func init() {

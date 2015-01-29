@@ -1,6 +1,6 @@
 package redis
 
-import "github.com/eliothedeman/gowork/job"
+import "github.com/eliothedeman/workhorse/job"
 
 // RedisJob contains information about a job provided by redis
 type RedisJob struct {

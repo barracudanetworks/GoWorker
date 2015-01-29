@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/eliothedeman/gowork/lua"
+	"github.com/eliothedeman/workhorse/lua"
 )
 
 // keepAlive holds a function that keeps the lock alive
