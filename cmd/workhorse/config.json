@@ -40,10 +40,10 @@
     ],
     "failure_handler": [
         {
-            "file": {
+            "disk": {
                 "name": "failure",
-                "root_folder": "failures",
-                "raw": true
+                "db_name": "my.db",
+                "bucket": "faild_jobs"
             }
         }
     ]

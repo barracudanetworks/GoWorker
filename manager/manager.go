@@ -128,6 +128,7 @@ func (m *Manager) runJob(j job.Job) {
 	workerChan, ok := m.readyWorkers[config.Type]
 	if !ok {
 		log.Println("Unknown job type", config.Type)
+		m.handleFailure(j, job.NewJobStats())
 		return
 	}
 

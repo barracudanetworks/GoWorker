@@ -20,7 +20,7 @@ var (
 func LoadWorker(w WorkerFactory) {
 	v := reflect.TypeOf(w())
 
-	name := strings.TrimPrefix(strings.ToLower(v.String()), "*")
+	name := strings.TrimPrefix(strings.Split(strings.ToLower(v.String()), ".")[0], "*")
 	// set the worker factory by the name of the worker it produces
 	Factories[name] = w
 }
