@@ -1,39 +1,101 @@
 package manager
 
 import (
-	"github.com/eliothedeman/img/provider"
 	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
 	"github.com/eliothedeman/workhorse/worker"
 )
 
 // JobTracker keeps track of jobs and the workers and providers they relate to
 type JobTracker struct {
-	idToJob      map[int]*job.Job
-	idToWorker   map[int]*worker.Worker
-	idToProvider map[int]*provider.Provider
-	jobToId      map[*job.Job]int
-	input        chan TrackPack
+	idToJob      map[uint64]job.Job
+	idToWorker   map[uint64]worker.Worker
+	idToProvider map[uint64]provider.Provider
+	jobToId      map[job.Job]uint64
+	input        chan *trackPack
 	remove       chan job.Job
+	stop         chan struct{}
 }
 
-func (j *JobTracker) Track()
+// NewJobTracker create and return a new JobTracker
+func NewJobTracker() *JobTracker {
+	return &JobTracker{
+		idToJob:      make(map[uint64]job.Job),
+		idToWorker:   make(map[uint64]worker.Worker),
+		idToProvider: make(map[uint64]provider.Provider),
+		jobToId:      make(map[job.Job]uint64),
+		input:        make(chan *trackPack),
+		remove:       make(chan job.Job),
+		stop:         make(chan struct{}),
+	}
+}
 
-func (j *JobTracker) Add(id int, job job.Job, w worker.Worker, p provider.Provider) {
-	jt := trackPack{
+// NewAndStartTracker create and start a JobTracker
+func NewAndStartTracker() *JobTracker {
+	j := NewJobTracker()
+	go j.Track()
+	return j
+}
+
+// Track
+func (j *JobTracker) Track() {
+	var tmpPack *trackPack
+	var tmpJob job.Job
+	for {
+		select {
+
+		// start trackinga job
+		case tmpPack = <-j.input:
+			j.idToJob[tmpPack.id] = tmpPack.job
+			j.idToProvider[tmpPack.id] = tmpPack.provider
+			j.idToWorker[tmpPack.id] = tmpPack.worker
+			j.jobToId[tmpPack.job] = tmpPack.id
+
+		// stop tracking a job
+		case tmpJob = <-j.remove:
+			j.unTrackJob(tmpJob)
+
+		// stop tracking jobs
+		case <-j.stop:
+			for tmpJob, _ = range j.jobToId {
+				j.unTrackJob(tmpJob)
+			}
+		}
+	}
+}
+
+func (j *JobTracker) Stop() {
+	j.stop <- struct{}{}
+}
+
+func (j *JobTracker) unTrackJob(jb job.Job) {
+	id, inMap := j.jobToId[jb]
+	if inMap {
+		delete(j.jobToId, jb)
+		delete(j.idToJob, id)
+		delete(j.idToProvider, id)
+		delete(j.idToWorker, id)
+	}
+}
+
+// Add start tracking a job
+func (j *JobTracker) Add(id uint64, job job.Job, w worker.Worker, p provider.Provider) {
+	jt := &trackPack{
 		id:       id,
 		job:      job,
 		worker:   w,
 		provider: p,
 	}
-	j.input <- j
+	j.input <- jt
 }
 
-func (j *JobTracker) Remove(job job.job) {
+// Remove stop tracking a job
+func (j *JobTracker) Remove(job job.Job) {
 	j.remove <- job
 }
 
 type trackPack struct {
-	id       int
+	id       uint64
 	job      job.Job
 	worker   worker.Worker
 	provider provider.Provider

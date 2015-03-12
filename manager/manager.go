@@ -53,7 +53,11 @@ type Manager struct {
 	failureHandlers []chan worker.Worker
 	// handleFailures if this is set, the manager will look for a failure handler worker for failed jobs
 	handleFailures bool
-	numWorkers     *Counter
+	// tracker keeps track of each job and the entities it touches
+	tracker *JobTracker
+
+	numJobs    *Counter
+	numWorkers *Counter
 }
 
 // Manage create and manage workers
@@ -132,10 +136,19 @@ func (m *Manager) runJob(j job.Job) {
 		return
 	}
 
-	// attempt to get an existing worker, if non is available, and the worker limit has not been reached, create a new one
+	// attempt to get an existing worker, if non is available we will block until one is found. Yay backpressure
 	worker := <-workerChan
 	go func() {
+		m.numJobs.Inc()
+		id := m.numJobs.Val()
+
+		// start tracking the job
+		m.tracker.Add(id, j, worker, j.JobConfirmer().(provider.Provider))
+
 		stats := worker.Work(j)
+
+		// stop tracking the job
+		m.tracker.Remove(j)
 
 		// recycle worker and send it back on the worker chan
 		worker.Recycle()
@@ -286,10 +299,12 @@ func (m *Manager) Init(i interface{}) error {
 		return config.WRONG_CONFIG_TYPE
 	}
 	m.numWorkers = &Counter{}
+	m.numJobs = &Counter{}
 	m.currentConfig = conf
 	m.jobChan = make(chan job.Job, 10)
 
 	m.Stats = NewManagerStats(m)
+	m.tracker = NewAndStartTracker()
 
 	m.applyConfig(conf)
 

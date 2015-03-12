@@ -17,3 +17,14 @@ func (m *MockWorker) Work(j job.Job) *job.JobStats {
 func (m *MockWorker) Kill() error {
 	return nil
 }
+
+func (m *MockWorker) ConfigStruct() interface{} {
+	return struct{}{}
+}
+
+func (m *MockWorker) Init(i interface{}) error {
+	return nil
+}
+
+func (m *MockWorker) Recycle() {
+}
