@@ -10,27 +10,20 @@ import (
 
 // JobTracker keeps track of jobs and the workers and providers they relate to
 type JobTracker struct {
-	idToJob       map[uint64]job.Job
-	idToWorker    map[uint64]worker.Worker
-	idToProvider  map[uint64]provider.Provider
-	idToStartTime map[uint64]time.Time
-	jobToId       map[job.Job]uint64
-	input         chan *trackPack
-	remove        chan job.Job
-	stop          chan struct{}
+	jobToPack map[job.Job]*trackPack
+	input     chan *trackPack
+	remove    chan job.Job
+	age       chan *agePack
+	stop      chan struct{}
 }
 
 // NewJobTracker create and return a new JobTracker
 func NewJobTracker() *JobTracker {
 	return &JobTracker{
-		idToJob:       make(map[uint64]job.Job),
-		idToWorker:    make(map[uint64]worker.Worker),
-		idToProvider:  make(map[uint64]provider.Provider),
-		idToStartTime: make(map[uint64]time.Time),
-		jobToId:       make(map[job.Job]uint64),
-		input:         make(chan *trackPack),
-		remove:        make(chan job.Job),
-		stop:          make(chan struct{}),
+		jobToPack: make(map[job.Job]*trackPack),
+		input:     make(chan *trackPack),
+		remove:    make(chan job.Job),
+		stop:      make(chan struct{}),
 	}
 }
 
@@ -45,6 +38,7 @@ func NewAndStartTracker() *JobTracker {
 func (j *JobTracker) Track() {
 	var tmpPack *trackPack
 	var tmpJob job.Job
+	var tmpAge *agePack
 	for {
 		select {
 
@@ -58,10 +52,16 @@ func (j *JobTracker) Track() {
 
 		// stop tracking jobs
 		case <-j.stop:
-			for tmpJob, _ = range j.jobToId {
-				j.unTrackJob(tmpJob)
+			for _, tmpPack = range j.jobToPack {
+				j.unTrackJob(tmpPack.job)
 			}
+
+		// get all of the jobs created before the give time
+		case tmpAge = <-j.age:
+			tmpAge.r <- j.byAge(tmpAge)
+
 		}
+
 	}
 }
 
@@ -69,22 +69,35 @@ func (j *JobTracker) Stop() {
 	j.stop <- struct{}{}
 }
 
+// byAge return all jobs that are at least "d" old
+func (j *JobTracker) byAge(age *agePack) []*trackPack {
+	pack := make([]*trackPack, 0, 8)
+	for _, v := range j.jobToPack {
+		if v.startTime.Before(age.age) {
+			pack = append(pack, v)
+		}
+	}
+	return pack
+}
+
+// ByAge
+func (j *JobTracker) ByAge(age time.Time) []*trackPack {
+	ap := &agePack{
+		age: age,
+		r:   make(chan []*trackPack),
+	}
+	j.age <- ap
+
+	return <-ap.r
+
+}
+
 func (j *JobTracker) trackJob(p *trackPack) {
-	j.idToJob[p.id] = p.job
-	j.idToProvider[p.id] = p.provider
-	j.idToWorker[p.id] = p.worker
-	j.jobToId[p.job] = p.id
-	j.idToStartTime[p.id] = time.Now()
+	j.jobToPack[p.job] = p
 }
 
 func (j *JobTracker) unTrackJob(jb job.Job) {
-	id, inMap := j.jobToId[jb]
-	if inMap {
-		delete(j.jobToId, jb)
-		delete(j.idToJob, id)
-		delete(j.idToProvider, id)
-		delete(j.idToWorker, id)
-	}
+	delete(j.jobToPack, jb)
 }
 
 // Add start tracking a job
@@ -104,8 +117,14 @@ func (j *JobTracker) Remove(job job.Job) {
 }
 
 type trackPack struct {
-	id       uint64
-	job      job.Job
-	worker   worker.Worker
-	provider provider.Provider
+	id        uint64
+	job       job.Job
+	worker    worker.Worker
+	provider  provider.Provider
+	startTime time.Time
+}
+
+type agePack struct {
+	age time.Time
+	r   chan []*trackPack
 }

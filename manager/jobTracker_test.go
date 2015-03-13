@@ -17,7 +17,7 @@ func TestTrackerAdd(t *testing.T) {
 
 	jt.Add(0, j, w, p)
 
-	if jt.idToJob[0] != j {
+	if jt.jobToPack[j].job != j {
 		t.Fail()
 	}
 
@@ -32,7 +32,7 @@ func TestTrackerRemove(t *testing.T) {
 
 	jt.Add(0, j, w, p)
 
-	if jt.idToJob[0] != j {
+	if jt.jobToPack[j].job != j {
 		t.Fail()
 	}
 
@@ -41,7 +41,7 @@ func TestTrackerRemove(t *testing.T) {
 	//  give it time to do it's thing
 	time.Sleep(1 * time.Millisecond)
 
-	if _, inMap := jt.idToJob[0]; inMap {
+	if _, inMap := jt.jobToPack[j]; inMap {
 		t.Fail()
 	}
 }
