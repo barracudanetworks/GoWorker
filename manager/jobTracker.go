@@ -1,6 +1,8 @@
 package manager
 
 import (
+	"time"
+
 	"github.com/eliothedeman/workhorse/job"
 	"github.com/eliothedeman/workhorse/provider"
 	"github.com/eliothedeman/workhorse/worker"
@@ -8,25 +10,27 @@ import (
 
 // JobTracker keeps track of jobs and the workers and providers they relate to
 type JobTracker struct {
-	idToJob      map[uint64]job.Job
-	idToWorker   map[uint64]worker.Worker
-	idToProvider map[uint64]provider.Provider
-	jobToId      map[job.Job]uint64
-	input        chan *trackPack
-	remove       chan job.Job
-	stop         chan struct{}
+	idToJob       map[uint64]job.Job
+	idToWorker    map[uint64]worker.Worker
+	idToProvider  map[uint64]provider.Provider
+	idToStartTime map[uint64]time.Time
+	jobToId       map[job.Job]uint64
+	input         chan *trackPack
+	remove        chan job.Job
+	stop          chan struct{}
 }
 
 // NewJobTracker create and return a new JobTracker
 func NewJobTracker() *JobTracker {
 	return &JobTracker{
-		idToJob:      make(map[uint64]job.Job),
-		idToWorker:   make(map[uint64]worker.Worker),
-		idToProvider: make(map[uint64]provider.Provider),
-		jobToId:      make(map[job.Job]uint64),
-		input:        make(chan *trackPack),
-		remove:       make(chan job.Job),
-		stop:         make(chan struct{}),
+		idToJob:       make(map[uint64]job.Job),
+		idToWorker:    make(map[uint64]worker.Worker),
+		idToProvider:  make(map[uint64]provider.Provider),
+		idToStartTime: make(map[uint64]time.Time),
+		jobToId:       make(map[job.Job]uint64),
+		input:         make(chan *trackPack),
+		remove:        make(chan job.Job),
+		stop:          make(chan struct{}),
 	}
 }
 
@@ -46,10 +50,7 @@ func (j *JobTracker) Track() {
 
 		// start trackinga job
 		case tmpPack = <-j.input:
-			j.idToJob[tmpPack.id] = tmpPack.job
-			j.idToProvider[tmpPack.id] = tmpPack.provider
-			j.idToWorker[tmpPack.id] = tmpPack.worker
-			j.jobToId[tmpPack.job] = tmpPack.id
+			j.trackJob(tmpPack)
 
 		// stop tracking a job
 		case tmpJob = <-j.remove:
@@ -66,6 +67,14 @@ func (j *JobTracker) Track() {
 
 func (j *JobTracker) Stop() {
 	j.stop <- struct{}{}
+}
+
+func (j *JobTracker) trackJob(p *trackPack) {
+	j.idToJob[p.id] = p.job
+	j.idToProvider[p.id] = p.provider
+	j.idToWorker[p.id] = p.worker
+	j.jobToId[p.job] = p.id
+	j.idToStartTime[p.id] = time.Now()
 }
 
 func (j *JobTracker) unTrackJob(jb job.Job) {
