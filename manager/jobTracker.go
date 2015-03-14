@@ -21,9 +21,10 @@ type JobTracker struct {
 func NewJobTracker() *JobTracker {
 	return &JobTracker{
 		jobToPack: make(map[job.Job]*trackPack),
-		input:     make(chan *trackPack),
+		input:     make(chan *trackPack, 10),
 		remove:    make(chan job.Job),
 		stop:      make(chan struct{}),
+		age:       make(chan *agePack),
 	}
 }
 
