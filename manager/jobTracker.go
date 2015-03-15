@@ -73,8 +73,9 @@ func (j *JobTracker) Stop() {
 // byAge return all jobs that are at least "d" old
 func (j *JobTracker) byAge(age *agePack) []*trackPack {
 	pack := make([]*trackPack, 0, 8)
+	now := time.Now()
 	for _, v := range j.jobToPack {
-		if v.startTime.Before(age.age) {
+		if age.age < now.Sub(v.startTime) {
 			pack = append(pack, v)
 		}
 	}
@@ -82,7 +83,7 @@ func (j *JobTracker) byAge(age *agePack) []*trackPack {
 }
 
 // ByAge
-func (j *JobTracker) ByAge(age time.Time) []*trackPack {
+func (j *JobTracker) ByAge(age time.Duration) []*trackPack {
 	ap := &agePack{
 		age: age,
 		r:   make(chan []*trackPack),
@@ -104,10 +105,11 @@ func (j *JobTracker) unTrackJob(jb job.Job) {
 // Add start tracking a job
 func (j *JobTracker) Add(id uint64, job job.Job, w worker.Worker, p provider.Provider) {
 	jt := &trackPack{
-		id:       id,
-		job:      job,
-		worker:   w,
-		provider: p,
+		id:        id,
+		job:       job,
+		startTime: time.Now(),
+		worker:    w,
+		provider:  p,
 	}
 	j.input <- jt
 }
@@ -126,6 +128,6 @@ type trackPack struct {
 }
 
 type agePack struct {
-	age time.Time
+	age time.Duration
 	r   chan []*trackPack
 }

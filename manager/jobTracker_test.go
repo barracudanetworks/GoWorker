@@ -33,12 +33,20 @@ func TestByAge(t *testing.T) {
 	p := j.JobConfirmer().(provider.Provider)
 
 	jt.Add(0, j, w, p)
+	time.Sleep(50 * time.Millisecond)
 
-	l := jt.ByAge(time.Now())
+	l := jt.ByAge(2 * time.Second)
+
+	if len(l) != 0 {
+		t.Error("expected 0 got 1")
+	}
+
+	l = jt.ByAge(-1)
 
 	if len(l) != 1 {
-		t.Fail()
+		t.Error("expected 1 got 0")
 	}
+
 }
 
 func TestTrackerRemove(t *testing.T) {
