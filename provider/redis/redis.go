@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/provider"
-	"github.com/barracudanetworks/GoWorker/worker/disk"
 	"github.com/eliothedeman/memString"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
+	"github.com/eliothedeman/workhorse/worker/disk"
 	redigo "github.com/garyburd/redigo/redis"
 )
 

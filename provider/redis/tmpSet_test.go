@@ -6,7 +6,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 var (

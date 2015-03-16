@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/database"
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/provider"
-	"github.com/barracudanetworks/GoWorker/time_util"
 	"github.com/boltdb/bolt"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/database"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/provider"
+	"github.com/eliothedeman/workhorse/time_util"
 )
 
 func init() {

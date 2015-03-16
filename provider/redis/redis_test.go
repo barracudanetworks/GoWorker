@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 const (

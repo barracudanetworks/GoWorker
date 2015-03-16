@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/barracudanetworks/GoWorker/database"
-	"github.com/barracudanetworks/GoWorker/job"
-	"github.com/barracudanetworks/GoWorker/mock"
-	"github.com/barracudanetworks/GoWorker/time_util"
+	"github.com/eliothedeman/workhorse/database"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/mock"
+	"github.com/eliothedeman/workhorse/time_util"
 )
 
 var (

@@ -13,7 +13,7 @@ const (
 )
 
 var (
-	DEFAULT_LUA_PATH  = os.Getenv("GOPATH") + "/src/github.com/barracudanetworks/GoWorker/lua"
+	DEFAULT_LUA_PATH  = os.Getenv("GOPATH") + "/src/github.com/eliothedeman/workhorse/lua"
 	WRONG_CONFIG_TYPE = errors.New("config: wrong config type")
 	LUA_PATH          = DEFAULT_LUA_PATH
 )
@@ -40,7 +40,6 @@ type AppConfig struct {
 	ProviderConfigs        []ConfigPair
 	WorkerConfigs          []ConfigPair
 	FailureHanldlerConfigs []ConfigPair
-	ManagerToManager       string      `json:"manager_to_manager_port"`
 	StatsPort              string      `json:"stats_port"`
 	LuaPath                string      `json:"lua_path"`
 	RawProviders           ConfigBlock `json:"providers"`

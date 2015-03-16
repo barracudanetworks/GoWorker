@@ -1,6 +1,6 @@
 package http
 
-import "github.com/barracudanetworks/GoWorker/job"
+import "github.com/eliothedeman/workhorse/job"
 import std_http "net/http"
 
 // HttpJob is a job created by the http provider

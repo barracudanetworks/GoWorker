@@ -1,17 +1,6 @@
 {
     "providers": [
         {
-            "redis": {
-                "name": "redis",
-                "host": "localhost",
-                "target": 100000,
-                "port": "6379",
-                "job_list": "job_list",
-                "dump_on_limit": true,
-                "memory_limit": "2G"
-            }
-        },
-        {
             "http": {
                 "name": "http",
                 "listen_on": "0.0.0.0:8081",
@@ -19,11 +8,13 @@
             }
         },
         {
-            "file": {
-                "root_folder": "jobs",
-                "check_interval": "1h",
-                "format": "json",
-                "target": 200
+            "sqs": {
+                "name": "sqs",
+                "access_key": "",
+                "secret_key": "",
+                "region": "",
+                "queue": "",
+                "target": 10.0
             }
         }
     ],
@@ -49,10 +40,10 @@
     ],
     "failure_handler": [
         {
-            "file": {
+            "disk": {
                 "name": "failure",
-                "root_folder": "failures",
-                "raw": true
+                "db_name": "my.db",
+                "bucket": "faild_jobs"
             }
         }
     ]

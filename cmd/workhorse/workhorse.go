@@ -12,15 +12,17 @@ import (
 
 	"strings"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/manager"
-	"github.com/barracudanetworks/GoWorker/provider"
-	_ "github.com/barracudanetworks/GoWorker/provider/http"
-	_ "github.com/barracudanetworks/GoWorker/provider/redis"
-	"github.com/barracudanetworks/GoWorker/worker"
-	_ "github.com/barracudanetworks/GoWorker/worker/cli"
-	_ "github.com/barracudanetworks/GoWorker/worker/disk"
-	_ "github.com/barracudanetworks/GoWorker/worker/http"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/job"
+	"github.com/eliothedeman/workhorse/manager"
+	"github.com/eliothedeman/workhorse/provider"
+	_ "github.com/eliothedeman/workhorse/provider/http"
+	_ "github.com/eliothedeman/workhorse/provider/redis"
+	_ "github.com/eliothedeman/workhorse/provider/sqs"
+	"github.com/eliothedeman/workhorse/worker"
+	_ "github.com/eliothedeman/workhorse/worker/cli"
+	_ "github.com/eliothedeman/workhorse/worker/disk"
+	_ "github.com/eliothedeman/workhorse/worker/http"
 )
 
 var (
@@ -79,8 +81,13 @@ func relaySignals(m *manager.Manager) {
 
 // printConfigStruct format and print out the available parameters to use in configuartion
 func printConfigStruct(c config.Configer) {
-	s := reflect.TypeOf(c.ConfigStruct())
-	v := reflect.ValueOf(c.ConfigStruct()).Elem()
+	printStruct(c.ConfigStruct())
+}
+
+func printStruct(st interface{}) {
+	// printConfigStruct format and print out the available parameters to use in configuartion
+	s := reflect.TypeOf(st)
+	v := reflect.ValueOf(st).Elem()
 	e := s.Elem()
 	for i := 0; i < e.NumField(); i++ {
 		required := e.Field(i).Tag.Get("required") == "true"
@@ -90,7 +97,7 @@ func printConfigStruct(c config.Configer) {
 		if strings.HasPrefix(fieldType, "config.ConfigBlock") {
 			fieldType = "[{},{}]"
 		}
-		if e.Field(i).PkgPath == "" && e.Field(i).Tag.Get("json") != "" {
+		if e.Field(i).PkgPath == "" && e.Field(i).Tag.Get("json") != "" && e.Field(i).Tag.Get("json") != "-" {
 
 			fmt.Printf("\t%15s: %8s required: %8t ", e.Field(i).Tag.Get("json"), fieldType, required)
 			if hasDefault {
@@ -123,8 +130,14 @@ func printManagerConfig() {
 	printConfigStruct(manager.NewManager())
 }
 
+func printJobConfig() {
+	fmt.Printf("JobConfig:\n")
+	printStruct(&job.JobConfig{})
+}
+
 func printAllConfigs() {
 	printManagerConfig()
+	printJobConfig()
 	printProviderConfigs()
 	printWorkerConfigs()
 }

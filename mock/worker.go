@@ -1,6 +1,6 @@
 package mock
 
-import "github.com/barracudanetworks/GoWorker/job"
+import "github.com/eliothedeman/workhorse/job"
 
 // MockWorker mocks out the worker interface for testing
 type MockWorker struct {
@@ -16,4 +16,15 @@ func (m *MockWorker) Work(j job.Job) *job.JobStats {
 // Kill noop for testing
 func (m *MockWorker) Kill() error {
 	return nil
+}
+
+func (m *MockWorker) ConfigStruct() interface{} {
+	return struct{}{}
+}
+
+func (m *MockWorker) Init(i interface{}) error {
+	return nil
+}
+
+func (m *MockWorker) Recycle() {
 }

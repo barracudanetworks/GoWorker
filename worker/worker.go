@@ -4,11 +4,10 @@ import (
 	"errors"
 	"log"
 	"reflect"
-
 	"strings"
 
-	"github.com/barracudanetworks/GoWorker/config"
-	"github.com/barracudanetworks/GoWorker/job"
+	"github.com/eliothedeman/workhorse/config"
+	"github.com/eliothedeman/workhorse/job"
 )
 
 // Factories holds all of the WorkerFacories that will be loaded for the manager to use
@@ -21,7 +20,7 @@ var (
 func LoadWorker(w WorkerFactory) {
 	v := reflect.TypeOf(w())
 
-	name := strings.TrimPrefix(strings.ToLower(v.String()), "*")
+	name := strings.TrimPrefix(strings.Split(strings.ToLower(v.String()), ".")[0], "*")
 	// set the worker factory by the name of the worker it produces
 	Factories[name] = w
 }
